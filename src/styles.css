@@ -1,0 +1,45 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .App textarea {
+    height: 100px;
+    width: 300px;
+    font-family: inherit;
+    padding: 0.5rem;
+  }
+  
+  .App .too-long {
+    background-color: pink;
+  }
+  
+  .App form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .App button {
+    width: 150px;
+  }
+  
+  .App .over-limit {
+    color: #f74663;
+    font-weight: bold;
+  }
+  
+  .App .message-success {
+    margin-top: calc(45vh);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 3px solid #8c8ca7;
+    width: 50%;
+  }
+  
