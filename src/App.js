@@ -26,13 +26,14 @@ export default function App() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="What's good?"
             />
-            <button
-              type="submit"
-              disabled={message.length < 1 || message.length > maxLength}
-            >
+            <button disabled={message.length > maxLength}>
               Tell the world!
             </button>
           </form>
+          {/* <p className={message.lenth > 60 ? "over-limit" : "" }> */}
+          <p className={message.length > 60 && "over-limit"}>
+            {message.length} / {maxLength}
+          </p>
         </div>
       )}
     </div>
